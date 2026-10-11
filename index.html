@@ -1,30 +1,79 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Beautiful You Web Studio</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header class="header">
-    <a href="#" class="logo">
-      <img src="assets/butterfly.png" alt="Beautiful You Web Studio Logo" class="logo__img">
-      <span class="logo__name">Beautiful You <span class="logo__studio">Web Studio</span></span>
-    </a>
-    <nav>
-      <ul class="nav__list">
-        <li><a href="#services" class="nav__link">Services</a></li>
-        <li><a href="#about" class="nav__link">About</a></li>
-        <li><a href="#contact" class="nav__link">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-  
-  <section class="hero">
-    <h1 class="hero__title">Helping local businesses spread their wings online</h1>
-    <p class="hero__para">Beautiful websites, e-gift cards and Google listings that bring new customers through your door.</p>
-    <a href="#contact" class="btn">Let's have a chat!</a>
-  </section>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beautiful You Web Studio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/f5922447fa.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <a href="#" class="logo">
+        <img
+        src="assets/butterfly.png"
+        alt="Beautiful You Web Studio Logo"
+        class="logo__img"
+        />
+        <span class="logo__name"
+        >Beautiful You <span class="logo__studio">Web Studio</span></span
+        >
+      </a>
+      <nav>
+        <ul class="nav__list">
+          <li><a href="#services" class="nav__link">Services</a></li>
+          <li><a href="#about" class="nav__link">About</a></li>
+          <li><a href="#contact" class="nav__link">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+    <section class="hero">
+      <h1 class="hero__title">
+        Helping local businesses spread their wings online
+      </h1>
+      <p class="hero__para">
+        Beautiful websites, e-gift cards and Google listings that bring new
+        customers through your door.
+      </p>
+      <a href="#contact" class="btn">Let's have a chat!</a>
+    </section>
+    <section id="services" class="services">
+      <h2 class="section__title">
+        What I can do for <span class="pink">your business</span>
+      </h2>
+      <div class="services__list">
+          <div class="service" onclick="selectCard(this)">
+            <i class="fa-solid fa-laptop service__icon"></i>
+            <h3 class="service__title">Websites</h3>
+            <p class="service__para">
+              A beautiful, mobile-friendly site that shows off your business and
+              makes it easy for customers to find you, call you and visit.
+            </p>
+          </div>
+
+          <div class="service" onclick="selectCard(this)">
+            <i class="fa-solid fa-gift service__icon"></i>
+            <h3 class="service__title">E-Gift Cards</h3>
+            <p class="service__para">
+              Let customers buy and send gift cards any time of day. Perfect for
+              holiday shoppers, and you get paid up front.
+            </p>
+          </div>
+
+          <div class="service" onclick="selectCard(this)">
+            <i class="fa-brands fa-google service__icon"></i>
+            <h3 class="service__title">Google Business Listing</h3>
+            <p class="service__para">
+              Show up on Google Maps and local searches with your hours, photos
+              and reviews, so nearby shoppers find you first.
+            </p>
+          </div>
+      </div>
+    </section>
+  </body>
 </html>
