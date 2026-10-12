@@ -12,6 +12,6 @@ function contact(event) {
     event.target,
     'BTkhjk-8XBvZ_yBUr' 
   ).then(() => {alert("Thank you,🦋 Chat soon!")}).catch(() => {
-    alert("The email service is temporarily unavailable. Please contact me directly with code26beautifulyou@gmail.com")
+    alert("The email service is temporarily unavailable. Please contact me directly at code26beautifulyou@gmail.com")
   })
 }
