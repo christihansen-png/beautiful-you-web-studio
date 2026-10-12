@@ -5,10 +5,13 @@ function selectCard(card) {
 }
 
 function contact(event) {
-  .sendForm(
+  event.preventDefault();
+  emailjs.sendForm(
     "service_beautiful",
     "template_h4ftgzz",
     event.target,
-    'sCCKszcb11RlWnO4K' 
-  )
+    'BTkhjk-8XBvZ_yBUr' 
+  ).then(() => {alert("Thank you,🦋 Chat soon!")}).catch(() => {
+    alert("The email service is temporarily unavailable. Please contact me directly with code26beautifulyou@gmail.com")
+  })
 }
