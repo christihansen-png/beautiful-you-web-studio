@@ -539,7 +539,8 @@ li {
     justify-content: center;
     text-align: center;
     font-family: inherit;
-    font-size: 12px;
+    font-size: 16px;
+    white-space: nowrap;
   }
 
   .message__sub {
