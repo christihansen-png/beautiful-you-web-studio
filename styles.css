@@ -590,7 +590,7 @@ li {
   }
 
   .submit__form {
-    width: 60%;
+    width: auto;
     justify-content: center;
     text-align: center;
     font-family: inherit;
@@ -640,4 +640,9 @@ li {
   .footer__copyright {
     padding: 0;
   }
+
+  .thanks__card {
+    width: auto;
+  }
+  
 }
