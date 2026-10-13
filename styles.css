@@ -84,7 +84,7 @@ HERO
 .hero__title {
   font-family: "Cormorant Garamond", serif;
   font-style: italic;
-  font-size: 56px;
+  font-size: clamp(36px, 8vw, 56px);
   line-height: 1.1;
   margin-bottom: 24px;
 }
@@ -458,6 +458,8 @@ li {
 
 @media (max-width: 768px) {
   .header {
+    display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     gap: 24px;
